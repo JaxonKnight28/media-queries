@@ -1,0 +1,62 @@
+.topnav {
+    background-color: #86bbd8;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+a {
+    padding: 16px;
+    text-decoration: none;
+    color: #ffff;
+    transition: all .5s;
+}
+
+a:hover {
+    color: #2f4858;
+}
+
+.sidenav {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: #336699;
+    padding-top: 60px;
+    transition: all .5s;
+}
+
+.sidenav a {
+    padding: 8px 32px;
+    font-size: 25px;
+}
+
+main {
+    position: relative;
+    left: 200px;
+    max-width: calc(100% - 200px);
+}
+
+.openbtn {
+    color: #ffffff;
+    flex-grow: 1;
+    font-size: 30px;
+    margin-left: 20px;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 700px) {
+    .sidenav {
+        left: -250px;
+    }
+
+    .openbtn {
+        visibility: visible;
+    }
+
+    main {
+        left: 20px;
+    }
+}
